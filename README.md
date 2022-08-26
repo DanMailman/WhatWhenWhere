@@ -6,6 +6,15 @@ Server: ML-based system that attempts to identify and geolocate images from clie
 - Raspberry PI 3 or 4
 
 ## Useful URLs
+
+### GPS Position
+- [Calculate GPS position offset using roll, pitch, yaw and length](https://forums.raspberrypi.com/viewtopic.php?t=223080)
+### Pitch, Roll, Yaw(Heading)
+- [Calibration of an Inertial Measurement Unit (IMU) with Raspberry Pi - Part 1](https://makersportal.com/blog/calibration-of-an-inertial-measurement-unit-with-raspberry-pi)
+- [Gyroscope and Accelerometer Calibration with Raspberry Pi](https://makersportal.com/blog/calibration-of-an-inertial-measurement-unit-imu-with-raspberry-pi-part-ii)
+- [MPU9250 Calibration using Python and a Raspberry Pi Computer](https://github.com/makerportal/mpu92-calibration)
+- [Interfacing An MPU6050 (Gyroscope + Accelerometer) Sensor Module To A Raspberry Pi](https://www.woolseyworkshop.com/2018/09/06/interfacing-an-mpu6050-gyroscope-accelerometer-sensor-module-to-a-raspberry-pi/)
+- [Issues with accelero and gyro sensitivity](https://forums.raspberrypi.com/viewtopic.php?t=175001)
 ### GitHub for Shared Projects
 - 
 ### Hardware for Pitch, Roll, Heading
@@ -26,5 +35,11 @@ Server: ML-based system that attempts to identify and geolocate images from clie
 - [Western Digital 240GB WD Green Internal PC SSD Solid State Drive](https://smile.amazon.com/Western-Digital-240GB-2-5-Inch-Internal/dp/B076Y374ZH/ref=sr_1_3?crid=3KUATWRKSIFGA&keywords=WD+Green+120GB+2.5%22+SSD&qid=1661472915&sprefix=wd+green+120gb+2.5+ssd%2Caps%2C195&sr=8-3)
 - [WD Green 120GB 2.5" SSD](https://www.ebay.com/itm/175365399223?hash=item28d497a2b7:g:94kAAOSwCSxibdAK&amdata=enc%3AAQAHAAAA8GtC477enOLK4K4BCOloMW4waekj2oq2I%2FxHRuUoxWK%2BcNw6tKJ6%2Fsfvcw%2FsxdcntsH99eCimKjhSB9c2jxiqViZ0%2Bx0Xgm0iohqB4gvgASqgAGo37pQoA8fyjRYavYmt9SMl2gkOcOO3RMhnYDFL%2Bb72X2jNi2jxP%2BHNSJPElkL2dKJy7NNkyheCKAWf0OgcYXql2IP9WE0e4aFNtigJM10ZIEFqUrrTXiYvN9xKyNw8tXyRrXqHTJLwJACOoid6dJ3NS3kxTv6RsCpxYaccRdGA841iobKlOxyBm%2FxjZp19ckuPhgilR3g7TJuzY7v4w%3D%3D%7Ctkp%3ABFBM9LOe-Npg)
 ### Hardware for Mobile (Cellular?) Communications
+- ?
 ### Hardware for Tetherless Power
+- ?
 ### Housing (DIY?, 3D Printed?)
+- ?
+
+## Links to Session Videos
+- [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/s/l1zv8xksy97kx1s/01_Project_Start_Discussion_README_Github_Collaboration_Requirements_Design.mp4?dl=0)
