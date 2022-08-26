@@ -2,9 +2,10 @@
 Client: RPI that sends TS, Image, Lat, Lon, Pitch, Roll, Heading. 
 Server: ML-based system that attempts to identify and geolocate images from clients. 
 
+## Links to Session Videos
+- [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/s/l1zv8xksy97kx1s/01_Project_Start_Discussion_README_Github_Collaboration_Requirements_Design.mp4?dl=0)
 ## ASSUMPTIONS
 - Raspberry PI 3 or 4
-
 ## Useful URLs
 ### GPS Position
 - [Calculate GPS position offset using roll, pitch, yaw and length](https://forums.raspberrypi.com/viewtopic.php?t=223080)
@@ -39,5 +40,3 @@ Server: ML-based system that attempts to identify and geolocate images from clie
 - ?
 ### Housing/Enclosure (DIY?, 3D Printed?)
 - ?
-## Links to Session Videos
-- [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/s/l1zv8xksy97kx1s/01_Project_Start_Discussion_README_Github_Collaboration_Requirements_Design.mp4?dl=0)
