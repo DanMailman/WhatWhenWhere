@@ -4,7 +4,8 @@ Client: RPI that sends TS, Image, Lat, Lon, Pitch, Roll, Heading.
 Server: ML-based system that attempts to identify and geolocate images from clients. 
 
 ## Links to Session Videos
-- [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/s/l1zv8xksy97kx1s/01_Project_Start_Discussion_README_Github_Collaboration_Requirements_Design.mp4?dl=0)
+- [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/sh/m0b7krepvxq05lq/AACjrnqyJp9NRWgXXWrOJENxa?dl=0)
+- [Image Change Detection - Session01](https://www.dropbox.com/sh/pnh137c3rwsll9m/AAAe3IzxziwkTIaNgrVcn6TCa?dl=0)
 ## ASSUMPTIONS
 - Raspberry PI 3 or 4
 ## Useful URLs
