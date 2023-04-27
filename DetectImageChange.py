@@ -17,7 +17,7 @@ class tCamera:
     def __init__(self):
         # print(f'tCamera.__init__(): ENTER.')
         self.CAM = PiCamera()
-        print(f'RESOLUTION: {self.CAM.resolution}') # Credit: Sarath
+        print(f'RESOLUTION: {self.CAM.resolution}') #  Credit: Sarath
         self.SleepTime = 3
         # print(f'tCamera.__init__(): RETURN.')
     def __del__(self):
