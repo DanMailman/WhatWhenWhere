@@ -1,6 +1,6 @@
 # WhatWhenWhere
 Client: RPI that sends TS, Image, Lat, Lon, Pitch, Roll, Heading. 
-Server: ML-based system that attempts to identify and geolocate images from clients. 
+Server: ML-based system that attempts to identify and geolocate items in images from clients. 
 
 ## Links to Session Videos
 - [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/sh/m0b7krepvxq05lq/AACjrnqyJp9NRWgXXWrOJENxa?dl=0)
