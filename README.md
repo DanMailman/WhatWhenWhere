@@ -4,7 +4,6 @@
   - Receives, Organizes Client Images
   - Performs ML Analyses on Images
   - Browser GUI to view Images/Analyses
- 
 ## Links to Session Videos
 - [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/sh/m0b7krepvxq05lq/AACjrnqyJp9NRWgXXWrOJENxa?dl=0)
 - [Image Change Detection (Saving Images, Measuring Similarity) - Session01](https://www.dropbox.com/sh/pnh137c3rwsll9m/AAAe3IzxziwkTIaNgrVcn6TCa?dl=0)
