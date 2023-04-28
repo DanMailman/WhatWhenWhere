@@ -1,4 +1,4 @@
-# DetectImageChange - Program to compare images at intervals and send significant changes to server
+# DetectImageChange.py - Program to compare images at intervals and (TODO) send significant changes to server
 ## CONSTANTS
 MSE_THRESHOLD = 15.00 # MSE == 0 ==>> "perfect similarity"; > 1 ==>> "less similarity"
 SSIM_THRESHOLD = 0.80 # SSIM in [-1:1], where 1 indicates perfect similarity.
@@ -31,29 +31,33 @@ class tCamera:
     def CaptureImage(self, name):
         self.CAM.capture(name)
 ## FUNCTIONS
-def mse(img01, img02):
-    # the 'Mean Squared Error' between the two images is the
-    # sum of the squared difference between the two images;
+def GetMeanSquaredErr(img01, img02):
+    # GetMeanSquaredErr(): Return the 'Mean Squared Error' of given images
+    # implementation: math
     # NOTE: the two images must have the same dimension
+    # NOTE: Lower MSE ==>> More "similar"
     print(f'GS: Img01: {float(average(img01.astype("float")))}, Img02: {float(average(img02.astype("float")))}')
     err = sum((img01.astype("float") - img02.astype("float")) ** 2)
     err /= float(img01.shape[0] * img01.shape[1])
-
-    # return the MSE, the lower the error, the more "similar"
-    # the two images are
     return err
-def DisplayPlot(img01, img02, s, m, s01, s02):
-    # setup the figure
-    fig = plt.figure(f'{s01} + " vs " + {s02}')
-    plt.suptitle("MSE: %.2f, SSIM: %.2f" % (m, s))
-    # show first image
-    fig.add_subplot(1, 2, 1)
+def DisplayPlot(img01, img02, nSSIM, nMSE, sTitle01, sTitle02):
+    # DisplayPlot(): Display Given Images, MSE, SSIM, with Titles
+    # Implementation: PyPlot Calls
+    fig = plt.figure(f'{sTitle01} + " vs " + {sTitle02}')
+    plt.suptitle("MSE: %.2f, SSIM: %.2f" % (nMSE, nSSIM))
+
+    fig.add_subplot(1, 3, 1)  # 1 Row, 3 Cols. Pos 1
     plt.imshow(img01, cmap=plt.cm.gray)
     plt.axis("off")
-    # show the second image
-    fig.add_subplot(1, 2, 2)
+
+    fig.add_subplot(1, 3, 2) # 1 Row, 3 Cols, Pos 2
     plt.imshow(img02, cmap=plt.cm.gray)
     plt.axis("off")
+
+    fig.add_subplot(1, 3, 3) # 1 Row, 3 Cols, Pos 3
+    plt.imshow(img01, cmap=plt.cm.gray)
+    plt.axis("off")
+
     plt.show()
 def DisplayDiffImg(img01,img02,diff):
     # The diff image contains the actual image differences between the two images
@@ -88,43 +92,50 @@ def DisplayDiffImg(img01,img02,diff):
     imshow('filled img02', filled_after)
     waitKey()
 def DifferentEnough(s01, s02):
+    # DifferentEnough(): Return True if Images are Sufficiently dissimilar
+    # Implementation: Compare SSIM to Constant Threshold (MSE Currently Unused, TODO Expunge?)
     # print(f'PrettyDifferent(): ENTER.')
     img01 = imread(s01)
     img02 = imread(s02)
 
     gs_img01 = cvtColor(img01, COLOR_BGR2GRAY)
     gs_img02 = cvtColor(img02, COLOR_BGR2GRAY)
-    m = mse(gs_img01, gs_img02) # TODO: Expunge!
+    m = GetMeanSquaredErr(gs_img01, gs_img02) # TODO: Expunge!
     (s, diff) = structural_similarity(gs_img01, gs_img02, full=True)
     # if (MSE_THRESHOLD < m) or (s < SSIM_THRESHOLD):
     if (s < SSIM_THRESHOLD):
-        print(f'{MSE_THRESHOLD} < mse({m}) OR ssim({s}) < {SSIM_THRESHOLD}')
+        # print(f'{MSE_THRESHOLD} < GetMeanSquaredErr({m}) OR ssim({s}) < {SSIM_THRESHOLD}')
+        # TODO: Expunge when this functionality is on the server
         DisplayPlot(img01, img02, s, m, s01, s02)
-        #DisplayDiffImg(img01, img02, diff)
+        # DisplayDiffImg(img01, img02, diff)
         print(f'PrettyDifferent(): RETURN TRUE.')
         return True
     print(f'PrettyDifferent(): RETURN FALSE.')
     return False
 def SendToServer(sImg):
+    # SendToServer(): TODO
+    # Implementation: TODO
     pass
     # print(f'SendToServer(): ENTER.')
     # print(f'SendToServer(): RETURN.')
 def ProcessImages():
+    # ProcessImages(): Send Sufficiently Different Images to Server.
+    # Implementation: Iterate on CaptureImage(), DifferentEnough(), (TODO) SendToServer()
     oCamera = tCamera()
     sFirstImgName = 'FirstImage.jpg'
     sSecondImgName = 'SecondImage.jpg'
-    # print("Capturing " + sFirstImgName + ".")
+    print("Capturing " + sFirstImgName + ".")
     sleep(3)  # Credit Matthew
     oCamera.CaptureImage(sFirstImgName)
     while True:
-        # print("Sleeping.")
+        print("Sleeping.")
         sleep(3)
         oCamera.CaptureImage(sSecondImgName)
         # print("Captured " + sSecondImgName + ".")
         if DifferentEnough(sFirstImgName, sSecondImgName):
             SendToServer(sSecondImgName)
         replace(sSecondImgName,sFirstImgName)
-        # print("Replaced " + sFirstImgName + " with " + sSecondImgName + ".")
+        print("Replaced " + sFirstImgName + " with " + sSecondImgName + ".")
 ## PROGRAM
 if __name__ == '__main__':
    ProcessImages()
@@ -155,6 +166,6 @@ if __name__ == '__main__':
 # def compare_images(img01, img02, s01,s02):
 #     # compute the mean squared error and structural similarity
 #     # index for the images
-#     m = mse(img01, img02)
+#     m = GetMeanSquaredErr(img01, img02)
 #     (s, diff) = structural_similarity(img01, img02, full=True)
 #     DisplayPlot(img01, img02, s, m, s01, s02)
