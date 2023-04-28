@@ -145,10 +145,7 @@ if __name__ == '__main__':
 #         vImages.append(imread(vNames[x]))
 #         vImages[x] = cvtColor(vImages[x], COLOR_BGR2GRAY)
 #     compare_images(vImages[0], vImages[1], vNames[0], vNames[1])
-# https://pyimagesearch.com/2014/09/15/python-compare-two-images/
-# https://stackoverflow.com/questions/56183201/detect-and-visualize-differences-between-two-images-with-opencv-python
-# https://linuxhint.com/install-matplotlib-raspberry-pi/
-# https://libguides.lib.msu.edu/raspberry_pi/take_photo_w_python
+#
 
 # def GetImages():
 #     vNames = []
