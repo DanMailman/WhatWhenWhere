@@ -1,13 +1,23 @@
 # WhatWhenWhere
-Client: RPI that sends TS, Image, Lat, Lon, Pitch, Roll, Heading. 
-Drafting_Requirements
-Server: ML-based system that attempts to identify and geolocate items in images from clients. 
+- Client: Raspberry PI: Sends Timestamp, Image, Lat, Lon, Pitch, Roll, Heading To Server 
+- Server: Linode
+  - Receives, Organizes Client Images
+  - Performs ML Analyses on Images
+  - Browser GUI to view Images/Analyses
 ## Links to Session Videos
 - [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/sh/m0b7krepvxq05lq/AACjrnqyJp9NRWgXXWrOJENxa?dl=0)
-- [Image Change Detection - Session01](https://www.dropbox.com/sh/pnh137c3rwsll9m/AAAe3IzxziwkTIaNgrVcn6TCa?dl=0)
+- [Image Change Detection (Saving Images, Measuring Similarity) - Session01](https://www.dropbox.com/sh/pnh137c3rwsll9m/AAAe3IzxziwkTIaNgrVcn6TCa?dl=0)
+- [Image Change Detection (Displaying Images in a Useful Way) -  Session01](https://www.dropbox.com/sh/cmkdlk4kt8mex6b/AAAg2hUK7bMYbJ-tyTTLNsa-a?dl=0)
 ## ASSUMPTIONS
 - Raspberry PI 3 or 4
 ## Useful URLs
+### Capturing Images
+- [Taking Photos with Python](https://libguides.lib.msu.edu/raspberry_pi/take_photo_w_python)
+### OpenCV Image Comparison
+- [Comparing Two Images](https://pyimagesearch.com/2014/09/15/python-compare-two-images/)
+- [Detect, Visualize, Differences](https://stackoverflow.com/questions/56183201/detect-and-visualize-differences-between-two-images-with-opencv-python)
+### Displaying Graphical Information
+- [Installing MatPlotLib](https://linuxhint.com/install-matplotlib-raspberry-pi/)
 ### GPS Position
 - [Calculate GPS position offset using roll, pitch, yaw and length](https://forums.raspberrypi.com/viewtopic.php?t=223080)
 ### Pitch, Roll, Yaw(Heading)
@@ -29,7 +39,7 @@ Server: ML-based system that attempts to identify and geolocate items in images 
 - [HiLetgo GY-NEO6MV2 NEO-6M GPS Flight Controller Module 3V-5V](https://smile.amazon.com/HiLetgo-GY-NEO6MV2-Controller-Ceramic-Antenna/dp/B01D1D0F5M/ref=sr_1_1_sspa?crid=32KIXT2OVZ9QE&keywords=neo+6m+gps+raspberry+pi&qid=1661472103&s=electronics&sprefix=neo+6m+gps+raspberry+po%2Celectronics%2C83&sr=1-1-spons&psc=1)
 - [NEO-6M GPS Module Aircraft Flight Controller](https://www.ebay.com/itm/403641520095?chn=ps&_trkparms=ispr%3D1&amdata=enc%3A1hD9NYea0R0mW00gIY0v5Mw52&norover=1&mkevt=1&mkrid=711-117182-37290-0&mkcid=2&itemid=403641520095&targetid=&device=c&mktype=pla&googleloc=9013291&poi=&campaignid=17597089569&mkgroupid=&rlsatarget=&abcId=9300988&merchantid=586214813&gclid=CjwKCAjwu5yYBhAjEiwAKXk_eIeAqFu03iGLJ6_CFwiKTbPa25-3XIIDiOHdFAAuonm2p_1PQgsVexoCAGAQAvD_BwE)
 - [Adafruit Ultimate GPS HAT for Raspberry Pi](https://learn.adafruit.com/adafruit-ultimate-gps-hat-for-raspberry-pi)
-### Hardware for Images
+### Hardware for Images (Raspberry PI Camera)
 - [Getting started with the Camera Module](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
 - [raspberry pi camera module v2](https://smile.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_3?keywords=raspberry+pi+camera+module+v2&qid=1661472427&sprefix=raspberry+pi+camera%2Caps%2C108&sr=8-3)
 - [Raspberry Pi Camera Module v2 8MP 1080P](https://www.ebay.com/itm/294928606528?hash=item44ab1d6540:g:o88AAOSw49xhlwLY&amdata=enc%3AAQAHAAAA8JmS41wEMMER0dMaVviFaByYfYPDAyrhK5X7kAT1HqPBBaVPikf2ekUbByi%2FgoBuoekFQgCwurjZGrfaqq9m0EVrtljt151Fb7c8yQiqoUSw5o%2Bx0ZDJdT3nTfxMIW6m1P%2FlG2JCgPZBN2JM4HtzPqoHmjpLLyR5Y6%2B4vLeeWsldflC%2BhXa20aghnY5UkS%2By87aVTICa5RRnAlkQN9YeOX28mHeiqMsXEPJowox2c4LsLpjykpSconbfYKGKz6Wy3uAxyMgvbd9xFDS8%2FUEjoMLCRNGty0ulLlE3lX6at4rOcvEHOxOH3ELl2APEshjQXg%3D%3D%7Ctkp%3ABFBM5p_W99pg)
