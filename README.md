@@ -11,8 +11,20 @@
 ## ASSUMPTIONS
 - Raspberry PI 3 or 4
 ## Useful URLs
-### Capturing Images
+### Development Environment
+- [\[solved \]Warning **: Error retrieving accessibility bus address:](https://forums.raspberrypi.com/viewtopic.php?t=196070)
+- [How to set environment variables in PyCharm?](https://stackoverflow.com/questions/42708389/how-to-set-environment-variables-in-pycharm)
+- [How to enable X11 forwarding in PyCharm SSH session?](https://stackoverflow.com/questions/41892039/how-to-enable-x11-forwarding-in-pycharm-ssh-session)
+- [How do I type hint a method with the type of the enclosing class?](https://stackoverflow.com/questions/33533148/how-do-i-type-hint-a-method-with-the-type-of-the-enclosing-class)
+### Python Type-Suggesting
+- [Type hinting / annotation (PEP 484) for numpy.ndarray](https://stackoverflow.com/questions/35673895/type-hinting-annotation-pep-484-for-numpy-ndarray)
+### Coding Python Well
+- [Python 3 for Scientists](https://python-3-for-scientists.readthedocs.io/en/latest/index.html)
+### Image Files on Disk
+ - [JPEG vs. PNG](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html)
+### Capturing Images (Python, PiCamera, OpenCV)
 - [Taking Photos with Python](https://libguides.lib.msu.edu/raspberry_pi/take_photo_w_python)
+- [keep all picamera parameters held constant](https://raspberrypi.stackexchange.com/questions/28620/keyboardinterrupt-handling-with-picamera)
 ### OpenCV Image Comparison
 - [Comparing Two Images](https://pyimagesearch.com/2014/09/15/python-compare-two-images/)
 - [Detect, Visualize, Differences](https://stackoverflow.com/questions/56183201/detect-and-visualize-differences-between-two-images-with-opencv-python)
@@ -26,8 +38,6 @@
 - [MPU9250 Calibration using Python and a Raspberry Pi Computer](https://github.com/makerportal/mpu92-calibration)
 - [Interfacing An MPU6050 (Gyroscope + Accelerometer) Sensor Module To A Raspberry Pi](https://www.woolseyworkshop.com/2018/09/06/interfacing-an-mpu6050-gyroscope-accelerometer-sensor-module-to-a-raspberry-pi/)
 - [Issues with accelero and gyro sensitivity](https://forums.raspberrypi.com/viewtopic.php?t=175001)
-### GitHub for Shared Projects
-- ?
 ### Hardware for Pitch, Roll, Heading
 - [Accelerometer, Gyroscope, and Magnetometer Analysis with Raspberry Pi Part I: Basic Readings](https://makersportal.com/blog/2019/11/11/raspberry-pi-python-accelerometer-gyroscope-magnetometer)
 - [MPU9250 Inertial Measurement Unit (IMU)](https://makersportal.com/shop/mpu9250-inertial-measurement-unit-imu)
