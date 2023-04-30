@@ -7,7 +7,7 @@
 ## Links to Session Videos
 - [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/sh/m0b7krepvxq05lq/AACjrnqyJp9NRWgXXWrOJENxa?dl=0)
 - [Image Change Detection (Saving Images, Measuring Similarity) - Session01](https://www.dropbox.com/sh/pnh137c3rwsll9m/AAAe3IzxziwkTIaNgrVcn6TCa?dl=0)
-- [Image Change Detection (Displaying Images in a Useful Way) -  Session01](https://www.dropbox.com/sh/cmkdlk4kt8mex6b/AAAg2hUK7bMYbJ-tyTTLNsa-a?dl=0)
+- [Image Change Detection (Displaying Images in a Useful Way) -  Session02](https://www.dropbox.com/sh/cmkdlk4kt8mex6b/AAAg2hUK7bMYbJ-tyTTLNsa-a?dl=0)
 ## ASSUMPTIONS
 - Raspberry PI 3 or 4
 ## Useful URLs
