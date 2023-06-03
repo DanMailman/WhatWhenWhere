@@ -5,9 +5,10 @@
   - Performs ML Analyses on Images
   - Browser GUI to view Images/Analyses
 ## Links to Session Videos
-- [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/sh/m0b7krepvxq05lq/AACjrnqyJp9NRWgXXWrOJENxa?dl=0)
-- [Image Change Detection (Saving Images, Measuring Similarity) - Session01](https://www.dropbox.com/sh/pnh137c3rwsll9m/AAAe3IzxziwkTIaNgrVcn6TCa?dl=0)
-- [Image Change Detection (Displaying Images in a Useful Way) -  Session02](https://www.dropbox.com/sh/cmkdlk4kt8mex6b/AAAg2hUK7bMYbJ-tyTTLNsa-a?dl=0)
+- [Project Start Discussion - README.md, Github/Collaboration, Requirements, Design](https://www.dropbox.com/s/0n04fva9aox8ddp/01_Project_Start_Discussion_README_Github_Collaboration_Requirements_Design.mp4?dl=0)
+- [Image Change Detection (Saving Images, Measuring Similarity) - Session01](https://www.dropbox.com/s/g8hp5dt9finyv82/02_Image_Change_Detection_Session01.mp4?dl=0)
+- [Image Change Detection (Displaying Images in a Useful Way) -  Session02](https://www.dropbox.com/s/gwg2qzi657srhc0/03_Image_Change_Detection_Session02.mp4?dl=0)
+- [Making Classes for Images and Cameras](https://www.dropbox.com/s/1uzpz7x6c1ai35k/04_Classes_for_Image_and_Camera.mp4?dl=0)
 ## ASSUMPTIONS
 - Raspberry PI 3 or 4
 ## Useful URLs

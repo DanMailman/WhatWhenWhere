@@ -97,7 +97,7 @@ if __name__ == '__main__':
     SLEEP_SECS = 3
     def ProcessImages():
         # ProcessImages(): Send Sufficiently Different Images to Server.
-        # Implementation: Iterate on CaptureImage(), DifferentEnough(), (TODO) SendToServer()
+        # Implementation: Iterate on UpdateImageAndMeta(), DifferentEnough(), (TODO) SendToServer()
         oCam = tCamera()
         oImg01 = tImg(oCam, 'Img01')
         oImg02 = tImg(oCam, 'Img02')
