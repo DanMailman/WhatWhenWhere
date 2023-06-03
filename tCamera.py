@@ -8,7 +8,7 @@ from numpy import ndarray              # REF: https://numpy.org/doc/stable/refer
 from socket import gethostname         # REF: https://docs.python.org/3/library/socket.html#socket.gethostname
 from Util import RoundToMultiple, NOW, HumanReadable
 class tCamera:
-    # tCam - Camera Class to Return OpenCV Images
+    # tCamera - Camera Class to Return OpenCV Images
     def __init__(self, ID: str = ''):
         # __init__(): Constructor
         # Implementation: Instance Variable Assigment, Initialization
@@ -53,7 +53,7 @@ class tCamera:
     @staticmethod
     def MakeName(dictMeta: dict) -> str:
         return dictMeta['ID'] + '-' + HumanReadable(dictMeta['Timestamp'])
-    @staticmethod
+if __name__ == '__main__':
     def main():
         from cv2 import imshow   # REF: https://docs.opencv.org/4.x/d7/dfc/group__highgui.html#ga453d42fe4cb60e5723281a89973ee563
         from cv2 import waitKey  # REF: https://docs.opencv.org/4.x/d7/dfc/group__highgui.html#ga5628525ad33f52eab17feebcfba38bd7
@@ -63,6 +63,5 @@ class tCamera:
             imshow(tCamera.MakeName(dictMeta), ndaImage)
             waitKey(0)
         oCam.close()
-if __name__ == '__main__':
-    tCamera.main()
+    main()
 
